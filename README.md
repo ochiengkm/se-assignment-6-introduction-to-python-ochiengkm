@@ -36,6 +36,159 @@ Answer the following questions based on your understanding of Python programming
 
 10. File I/O:
     - How do you read from and write to files in Python? Write a script that reads the content of a file and prints it to the console, and another script that writes a list of strings to a file.
+   
+   Answers:
+
+1. Python Basics
+What is Python?
+Python is a high-level, interpreted programming language known for its readability and simplicity. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+
+Key Features of Python:
+Readability: Python's syntax is clear and easy to understand.
+Versatility: Used for web development, data science, automation, and more.
+Libraries and Frameworks: Extensive standard library and third-party modules (e.g., Django, Flask, Pandas, NumPy).
+Community Support: Large, active community.
+
+Examples of Use Cases:
+Web Development: Using frameworks like Django or Flask.
+Data Science: Libraries like Pandas, NumPy, and Scikit-Learn.
+Automation: Writing scripts to automate repetitive tasks.
+Game Development: Libraries like Pygame.
+
+
+2. Installing Python
+Steps to Install Python:
+Download Python: Visit the official Python website and download the installer for your OS.
+Run Installer: Follow the instructions to install Python. Ensure you check the option to add Python to your PATH.
+Verify Installation: Open a terminal/command prompt and type python --version or python3 --version to verify the installation.
+Setting Up a Virtual Environment:
+
+Install venv Module: Included by default in Python 3.3 and later.
+Create Virtual Environment: In the terminal, navigate to your project directory and run python -m venv venv.
+Activate Virtual Environment:
+Windows: venv\Scripts\activate
+macOS/Linux: source venv/bin/activate
+
+
+3. Python Syntax and Semantics
+Hello, World! Program:
+print("Hello, World!")
+Explanation:
+
+print: A built-in function to output text to the console.
+"Hello, World!": A string literal.
+
+
+4. Data Types and Variables
+Basic Data Types:
+int: Integer, e.g., 42
+float: Floating-point number, e.g., 3.14
+str: String, e.g., "Hello"
+bool: Boolean, e.g., True or False
+Script Demonstrating Variables:
+
+# Integer
+a = 10
+print(a)
+
+# Float
+b = 3.14
+print(b)
+
+# String
+c = "Hello"
+print(c)
+
+# Boolean
+d = True
+print(d)
+
+
+5. Control Structures
+Conditional Statements:
+x = 10
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is 5 or less")
+
+For Loop:
+for i in range(5):
+    print(i)
+
+
+6. Functions in Python
+What are Functions?
+Functions are reusable blocks of code that perform a specific task. They help to organize and modularize code.
+
+Function Example:
+def add(a, b):
+    return a + b
+
+# Calling the function
+result = add(3, 5)
+print(result)
+
+
+
+7. Lists and Dictionaries
+Lists:
+Ordered, mutable collections of items.
+
+numbers = [1, 2, 3, 4, 5]
+print(numbers[0])  # Accessing elements
+numbers.append(6)  # Adding elements
+print(numbers)
+
+Dictionaries:
+Unordered, mutable collections of key-value pairs.
+
+person = {"name": "Alice", "age": 25}
+print(person["name"])  # Accessing values
+person["city"] = "New York"  # Adding elements
+print(person)
+
+
+
+8. Exception Handling
+What is Exception Handling?
+Managing errors gracefully using try, except, and finally blocks.
+
+Example:
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+finally:
+    print("This block executes no matter what.")
+
+
+
+9. Modules and Packages
+Modules and Packages:
+
+Module: A file containing Python code.
+Package: A directory containing multiple modules.
+
+Importing a Module:
+
+import math
+print(math.sqrt(16))
+
+
+
+10. File I/O
+Reading from a File:
+
+with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)
+Writing to a File:
+
+lines = ["Hello", "World"]
+with open('output.txt', 'w') as file:
+    for line in lines:
+        file.write(line + "\n")
 
 # Submission Guidelines:
 - Your answers should be well-structured, concise, and to the point.
